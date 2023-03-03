@@ -363,7 +363,7 @@ function GM:InitializedConfig()
 		statusLabel:SetText(L"loading")
 		statusLabel:SetFont("ixTitleFont")
 		statusLabel:SetContentAlignment(5)
-		statusLabel:SetTextColor(color_red)
+		statusLabel:SetTextColor(color_white)
 
 		timer.Simple(5, function()
 			if (IsValid(ix.gui.loading)) then
