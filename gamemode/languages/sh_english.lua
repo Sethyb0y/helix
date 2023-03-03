@@ -4,8 +4,8 @@ NAME = "English"
 LANGUAGE = {
 	helix = "Helix",
 
-	introTextOne = "fist industries presents",
-	introTextTwo = "in collaboration with %s",
+	introTextOne = "oh yeah it's roleplay time",
+	introTextTwo = "get your ass ready",
 	introContinue = "press space to continue",
 
 	helpIdle = "Select a category",
