@@ -237,7 +237,7 @@ function PANEL:Init()
 	local createButton = self.mainButtonList:Add("ixMenuButton")
 	createButton:SetText("create")
 	createButton:SizeToContents()
-	self.mainButtonList:Dock(BOTTOM)
+	self.createButton:Dock(BOTTOM)
 	createButton.DoClick = function()
 		local maximum = hook.Run("GetMaxPlayerCharacter", LocalPlayer()) or ix.config.Get("maxCharacters", 5)
 		-- don't allow creation if we've hit the character limit
