@@ -145,7 +145,7 @@ function PANEL:Init()
 	self:DockPadding(padding, padding, padding, padding)
 
 	local infoLabel = self:Add("DLabel")
-	infoLabel:SetTextColor(Color(255, 255, 255, 25))
+	infoLabel:SetTextColor(Color(64, 125, 2, 200))
 	infoLabel:SetFont("ixMenuMiniFont")
 	infoLabel:SetText(L("helix") .. " " .. GAMEMODE.Version)
 	infoLabel:SizeToContents()
@@ -231,7 +231,7 @@ function PANEL:Init()
 
 	-- button list
 	self.mainButtonList = self:Add("ixCharMenuButtonList")
-	self.mainButtonList:Dock(MIDDLE)
+	self.mainButtonList:Dock(RIGHT)
 
 	-- create character button
 	local createButton = self.mainButtonList:Add("ixMenuButton")
