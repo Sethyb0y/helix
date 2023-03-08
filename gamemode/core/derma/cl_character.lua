@@ -231,7 +231,7 @@ function PANEL:Init()
 
 	-- button list
 	self.mainButtonList = self:Add("ixCharMenuButtonList")
-	self.mainButtonList:Dock(RIGHT)
+	self.mainButtonList:Dock(BOTTOM)
 
 	-- create character button
 	local createButton = self.mainButtonList:Add("ixMenuButton")
