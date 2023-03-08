@@ -3,7 +3,7 @@ local gradient = surface.GetTextureID("vgui/gradient-d")
 local gradientUp = surface.GetTextureID("vgui/gradient-u")
 local gradientLeft = surface.GetTextureID("vgui/gradient-l")
 local gradientRadial = Material("helix/gui/radial-gradient.png")
-local defaultBackgroundColor = Color(30, 30, 30, 200)
+local defaultBackgroundColor = Color(64, 138, 2, 200)
 
 local SKIN = {}
 derma.DefineSkin("helix", "The base skin for the Helix framework.", SKIN)
