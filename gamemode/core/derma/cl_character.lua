@@ -153,7 +153,8 @@ function PANEL:Init()
 
 	local logoPanel = self:Add("Panel")
 	logoPanel:SetSize(ScrW(), ScrH() * 0.25)
-	logoPanel:SetPos(0, ScrH() * 0.25)
+-- sets the height of the title
+	logoPanel:SetPos(0, ScrH() * 0.10)
 	logoPanel.Paint = function(panel, width, height)
 		local matrix = self.currentMatrix
 
@@ -231,13 +232,15 @@ function PANEL:Init()
 
 	-- button list
 	self.mainButtonList = self:Add("ixCharMenuButtonList")
-	self.mainButtonList:Dock(BOTTOM)
+	self.mainButtonList:Dock(FILL)
+	self.mainButtonList:SetContentAlignment(5)
+
 
 	-- create character button
 	local createButton = self.mainButtonList:Add("ixMenuButton")
 	createButton:SetText("create")
 	createButton:SizeToContents()
-	createButton:Center()
+	createButton:SetContentAlignment(5)
 	createButton.DoClick = function()
 		local maximum = hook.Run("GetMaxPlayerCharacter", LocalPlayer()) or ix.config.Get("maxCharacters", 5)
 		-- don't allow creation if we've hit the character limit
@@ -255,6 +258,8 @@ function PANEL:Init()
 	self.loadButton = self.mainButtonList:Add("ixMenuButton")
 	self.loadButton:SetText("load")
 	self.loadButton:SizeToContents()
+	self.loadButton:SetContentAlignment(5)
+	self.loadButton:SetContentAlignment(5)
 	self.loadButton.DoClick = function()
 		self:Dim()
 		parent.loadCharacterPanel:SlideUp()
@@ -276,6 +281,7 @@ function PANEL:Init()
 		local extraButton = self.mainButtonList:Add("ixMenuButton")
 		extraButton:SetText(extraText, true)
 		extraButton:SizeToContents()
+		extraButton:SetContentAlignment(5)
 		extraButton.DoClick = function()
 			gui.OpenURL(extraURL)
 		end
@@ -302,6 +308,7 @@ function PANEL:UpdateReturnButton(bValue)
 
 	self.returnButton:SetText(self.bUsingCharacter and "return" or "leave")
 	self.returnButton:SizeToContents()
+	self.returnButton:SetContentAlignment(5)
 end
 
 function PANEL:OnDim()
