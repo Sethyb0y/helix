@@ -318,6 +318,68 @@ ix.anim.vortigaunt = {
 	},
 	glide = "jump_holding_glide"
 }
+ix.anim.chumtoad = {
+	melee = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+	},
+	grenade = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+	},
+	normal = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+	},
+	pistol = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+		["reload"] = "Idle2"",
+	},
+	shotgun = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+		["reload"] = "Idle2"",
+	},
+	smg = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+		["reload"] = "Idle2"",
+	},
+	beam = {
+		["attack"] = "Flinch2",
+		[ACT_MP_STAND_IDLE] = {"Idle"},
+		[ACT_MP_CROUCH_IDLE] = {"Idle"},
+		[ACT_MP_RUN] = {"Hop"},
+		[ACT_MP_CROUCHWALK] = {"Idle2},
+		[ACT_MP_WALK] = {"Hop"},
+		["reload"] = "Idle2"",
+	},
+}
 ix.anim.player = {
 	normal = {
 		[ACT_MP_STAND_IDLE] = ACT_HL2MP_IDLE,
