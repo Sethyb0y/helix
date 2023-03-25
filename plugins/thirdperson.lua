@@ -27,8 +27,8 @@ if (CLIENT) then
 		hidden = isHidden
 	})
 
-	ix.option.Add("thirdpersonVertical", ix.type.number, 0, {
-		category = "thirdperson", min = -5, max = 30,
+	ix.option.Add("thirdpersonVertical", ix.type.number, -10, {
+		category = "thirdperson", min = -15, max = 30,
 		hidden = isHidden
 	})
 
